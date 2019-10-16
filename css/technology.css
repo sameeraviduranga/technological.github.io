@@ -1,0 +1,156 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+}
+body{
+	
+	margin: 0;
+	
+	
+}
+ul.top-nav{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 25%;
+	position: fixed;
+	height: 100%;
+	background: rgba(200,200,200,0.2);
+	overflow: hidden;
+}
+ul.top-nav li{
+	
+	padding: 5px;
+}
+ul.top-nav li a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	
+}
+ul.top-nav li a.active{
+	
+	background: #1DBD11;
+}
+ul.top-nav li a:hover:not(.active){
+	
+	border-bottom: 2px solid #1317E4;
+	font-size: 1.5em;
+	
+	color: #1317E4;
+}
+
+div.container{
+	
+	margin-left: 25%;
+	padding: 5px 10px;
+	height: auto;
+	
+	
+}
+@media screen and (max-width:1200px){
+	
+	ul.top-nav{
+		
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	ul.top-nav li a,ul.top-nav li a.active{
+		
+		float: left;
+		padding: 15px;
+		
+		
+	}
+	ul.top-nav li a.right{
+		float: right;
+	}
+	ul.top-nav li{
+	
+	padding: 0;
+}
+	div.container{
+		
+		margin: 0;
+	}
+	
+}
+
+@media screen and (max-width:500px){
+	
+	ul.top-nav li a,ul.top-nav li a.right,ul.top-nav li a.active{
+		
+		float: none;
+		text-align: center;
+		
+	}
+	ul.top-nav{
+		
+		width: 100%;
+	}
+}
+
+p.into::first-letter{
+	font-variant: small-caps;
+	font-size: 2em;
+	color: red;
+}
+p.into{
+	
+	overflow: hidden;
+}
+p{
+	text-align: justify;
+}
+.news,.worked-study{
+	
+	padding:25px 5px;
+	overflow: hidden;
+	box-shadow: 0px 2px 5px 0px rgba(200,200,200,0.5);
+	margin-bottom: 50px;
+}
+.box{
+	
+	box-sizing: border-box;
+	width: 25%;
+	padding: 5px 5px;
+	text-align: justify;
+	overflow-y: scroll;
+	background: #E9E6E6;
+	border-radius: 6px;
+	text-indent: 50px;
+	height: 300px;
+	float: left;
+}
+.box p::first-letter{
+	
+	font-size: 1.5em
+}
+.box:hover{
+	background: rgba(220,220,220,0.5);
+	border: 1px solid gray;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
+	transition: 0.5s ease-in-out;
+}
+.foot{
+	
+	
+}
+.clearfix{
+	
+	content: "";
+	clear: both;
+	display: table;
+	
+}
+div.clearfix{
+	
+	width: 100%;
+	height: 300px;
+	background: #064B56;
+	position: relative;
+	top: 20px;
+	
+	
+}
